@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.lostandfoundapp.activity.UpdateDataActivity" >
+
+    <LinearLayout
+        android:id="@+id/update_data_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/update_data_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@style/AppTheme"
+                android:src="@drawable/backpage" />
+
+            <TextView
+                android:id="@+id/update_data_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="修改消息"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RadioGroup 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RadioButton 
+                android:id="@+id/update_data_type0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="丢失"/>
+            <RadioButton 
+                android:id="@+id/update_data_type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="招领"/>
+            <RadioButton 
+                android:id="@+id/update_data_type2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="寻人"/>
+        </RadioGroup>
+        
+        <EditText
+            android:id="@+id/update_data_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/publish_selector"
+            android:gravity="center"
+            android:hint="填写物品名称"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/update_data_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/publish_selector"
+            android:gravity="right|left"
+            android:hint="填写相关描述"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/update_data_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/publish_selector"
+            android:hint="填写备注"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/update_data_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/publish_off_shape"
+            android:text="事发地点"
+            android:textSize="20sp" />
+        
+        <EditText
+            android:id="@+id/update_data_address_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/publish_selector"
+            android:hint="填写详细地址"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/publish_off_shape"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/update_data_date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:hint="事发时段"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/update_data_date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:hint="事发时段"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/update_data_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_data_data"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/camera" />
+
+    <Button
+        android:id="@+id/update_data_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_selector"
+        android:text="确认修改" />
+
+</RelativeLayout>

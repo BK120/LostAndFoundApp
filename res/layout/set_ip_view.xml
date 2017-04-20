@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/dialog_setid_inputip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="手动输入IP" />
+
+        <EditText
+            android:id="@+id/dialog_setid_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:singleLine="true"
+            android:hint="192.168.1.105"
+            android:background="@drawable/publish_selector" />
+
+        <RadioButton
+            android:id="@+id/dialog_setid_homeip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="家庭局域网" />
+
+        <RadioButton
+            android:id="@+id/dialog_setid_phoneip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机热点局域网" />
+    </RadioGroup>
+
+</LinearLayout>

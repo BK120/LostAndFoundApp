@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/check_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/default_pic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/check_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/male"
+            android:text="李志振"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/check_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autoLink="phone"
+            android:text="18862006760"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/check_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="江苏省盐城市盐城师范学院5号楼512"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

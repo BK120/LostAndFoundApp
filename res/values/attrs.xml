@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="myview">
+        <attr name="image" format="reference"></attr>
+        <attr name="text" format="string"></attr>
+    </declare-styleable>
+    <declare-styleable name="myedittext">
+        <attr name="text" format="string"></attr>
+        <attr name="ems" format="integer"></attr>
+        <attr name="singleLine" format="boolean"></attr>
+        <attr name="inputType">
+            <flag name="none" value="0"></flag>
+            <flag name="number" value="2"></flag>
+            <flag name="textPassword" value="129"></flag>
+        </attr>
+    </declare-styleable>
+
+</resources>

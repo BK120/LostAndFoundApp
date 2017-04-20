@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:laf="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lostandfoundapp.activity.UpdataActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <ImageView
+            android:id="@+id/updata_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@style/AppTheme"
+            android:src="@drawable/backpage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改个人信息"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <com.lostandfoundapp.view.MyView
+        android:id="@+id/updata_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        laf:image="@drawable/updata_name"
+        android:layout_marginTop="10dp"
+        laf:text="修改姓名" />
+
+    <com.lostandfoundapp.view.MyView
+        android:id="@+id/updata_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        laf:image="@drawable/updata_sex"
+        laf:text="修改性别" />
+
+    <com.lostandfoundapp.view.MyView
+        android:id="@+id/updata_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        laf:image="@drawable/updata_address"
+        laf:text="修改常驻地址" />
+
+
+    <com.lostandfoundapp.view.MyView
+        android:id="@+id/updata_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        laf:image="@drawable/updata_password"
+        laf:text="修改密码" />
+
+</LinearLayout>

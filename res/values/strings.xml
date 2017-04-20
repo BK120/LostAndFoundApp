@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">失而复得</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_guid">GuidActivity</string>
+    <string name="title_activity_publish">PublishActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_sign">SignActivity</string>
+    <string name="title_activity_adress">AdressActivity</string>
+    <string name="title_activity_updata">UpdataActivity</string>
+    <string name="title_activity_updata_pic">UpdataPicActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_check_pic">CheckPicActivity</string>
+    <string name="title_activity_update_data">UpdateDataActivity</string>
+
+</resources>
